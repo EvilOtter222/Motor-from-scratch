@@ -36,15 +36,14 @@ Brushed motors =  carbon brushes and communicator to transfer electricity
 Brushless = Uses a chip and magnets 
 
 Servo vs motor: Motor turns electricity into rotation, servo is just a motor with a sensor that measures position, and can go to a target position and correct itself. I'm turning a motor into a servo. 
-There are three tiers of servos:
 
+Examples: 
 MG90S - It uses PWM and a potentiometer to determine position
 STS3215 - (LeRobot SO101 Servo) - 12-bit magnetic encoder for a full 360, what I'll try to replicate
-My chip?? - Have an encoder! 
 
+I want to have an ecoder similar to the STS3215. 
 Diametric magnet = north and south poles on opposite halves of the circle. 
-
-Encoder = sensor that measures angular position and rotation
+Encoder = sensor that measures angular position and rotation. It uses fields from the diametric magnet? It apparently uses electromagnet waves? Force fields?? Still confused about that, will research further later. 
 
 Main sources: 
 https://humanoid.guide/humanoid-actuator-commonality/
@@ -67,7 +66,8 @@ https://oscarliang.com/brushed-vs-brushless-motor/
 
 Easier said than done. 
 
+# Copyright
+Images are getting difficult to find because of copyright :(
 # AI use: 
 Google AI for researching, Claude for suggesting the STM microcontroller for the CAN lines instead of TX/RX chaining. 
-
 **Total time spent: 3h**

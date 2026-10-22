@@ -1,11 +1,11 @@
-## Journal for 10/20 to 10/27
+### Journal for 10/20 to 10/27
 
 ---
 
 ## October 20, 2026: <Ideas and Intial Planning>
 
 
-# What should I build? That's a good question... 
+# What should I build? 
 I was recently scrolling on youtube, when I saw a few shorts about cyclodial disks, and a SimpleFOC library that controlled a gimbal motor. I love doing things from scratch--so the question was... what is the most powerful, versitile, and inexpensive robotic arm can I from scratch as possible. 
 
 A normal robotic arm will be boring. It's mainly just cad-ing an arm design, buying a few servos, and hooking it up all to an arduino. I've done that before, there's a ton of tutorials for that, and that will be unoriginal, but my project will try to elevate what I've already done. 
@@ -67,7 +67,54 @@ https://oscarliang.com/brushed-vs-brushless-motor/
 Easier said than done. 
 
 # Copyright
-Images are getting difficult to find because of copyright :(
+Images are getting difficult to find because of copyright :(. Don't worry, I'll redraw the diagrams in the future. 
 # AI use: 
 Google AI for researching, Claude for suggesting the STM microcontroller for the CAN lines instead of TX/RX chaining. 
 **Total time spent: 3h**
+
+
+## October 21, 2026 <Selecting parts>
+
+Yesterday, I figured out the general parts. But to run a CAN bus, we need more for the STM, we need a crystal more precise CAN bus. 
+
+## Crystals  
+Here's the different kinds of crystals I found out about researching (from least to most accurate):
+1. Default crystal . 
+2. regular crystal 
+3. TCOX 
+4. OCXO 
+5. Double-oven OCXO and BVA
+
+Shown from this document: https://www.nxp.com/docs/en/application-note/AN1798.pdf in example 4.2  (8mhz crystal and have the bit rate of 1mbps):
+
+Default crystal has a ppm of +- 1%, which isn't as accurate enough. 
+
+
+The regular crystal has a ppm of 20
+8,000,000 * 20/1,000,000 = +/- 160Hz.
+
+Thus, the regular crystal is more than enough. 
+
+But kind of crystal should I get? 
+
+The second optimization is a lower pF crystal, as it'll be faster, and require less power, as well as giving the STM more margin. 
+
+I was initally thinking about the ECS-80-12-33-JGN-TR3, but I forgot about the ESR (internal resistive energy loss). The ESR was 400, while I found a better alternative: 
+
+The Abaracon ABLS 8.000 MHz, and although electrically it's very good, 11.4 x 4.7mm might be too big. 
+
+Wait, I'm not sure where I got stuck on 8MHz, so I decided on the https://www.lcsc.com/product-detail/SMD-Crystals_Yangxing-Tech-X322516MMB4SI_C112972.html, which is both small, 12 pF, and I can change the code to change the Hz (the code can only run in 8Mhz). This is what I'll be using!! 
+
+## CAN communication
+Talking about all this CAN, I need a good CAN transciever to conver the TX and RX bits into high and low voltages. First search result I saw was the SN65HVD230DR, but good nonetheless. Only thing is it's rated for 1 Mbps, which isn't the fastest CAN can go. 
+
+The TCAN3413 looks a bit better because it's smaller and it has 8Mbps.  It's smaller as well. 
+https://www.ti.com/product/TCAN3413
+
+This video I watched was very help: https://www.google.com/url?sa=i&source=web&rct=j&url=https://www.youtube.com/watch?v%3DaFX8asQy4kE%26t%3D627&ved=2ahUKEwiR94vqncyXAxUoM1kFHadzHMUQ0YISegoIAggACAAIEBAQ&opi=89978449&cd&psig=AOvVaw2ifDe8YE5ZC9qpvRfCtFrF&ust=1792710677257000. 
+
+It looks like I need a termination resistor, decoulpling capacitor, and a bus connector. 
+It would be nice to have  TVS diode and a common mode choke, as well as a debug setup. 
+
+Here's what my schematic looks like so far. I finished the crystals and added the 120ohm resistor for the end of the CAN bus: 
+

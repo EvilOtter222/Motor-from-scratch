@@ -71,9 +71,8 @@ Images are getting difficult to find because of copyright :(. Don't worry, I'll 
 # AI use: 
 Google AI for researching, Claude for suggesting the STM microcontroller for the CAN lines instead of TX/RX chaining. 
 **Total time spent: 3h**
-
-
-## October 21, 2026 <Selecting parts>
+---
+ October 21, 2026 <Selecting parts>
 
 Yesterday, I figured out the general parts. But to run a CAN bus, we need more for the STM, we need a crystal more precise CAN bus. 
 
@@ -117,4 +116,42 @@ It looks like I need a termination resistor, decoulpling capacitor, and a bus co
 It would be nice to have  TVS diode and a common mode choke, as well as a debug setup. 
 
 Here's what my schematic looks like so far. I finished the crystals and added the 120ohm resistor for the end of the CAN bus: 
+
+
+
+Total time spent: **5.5 hours** 
+
+---
+October 25, 2026 <Starting the Schematic>
+
+Spent time starting the schematic! Last session I spent time building the CAN and MCU schematics. 
+
+This session I'll focus on adding the power + extra parts for a MCU to actually "run", as well as fix some errors along the way
+
+The wiring was getting messy so I split the wiring into the CAN module and the TCAN3413DDFR
+
+Designing the schematic was mainly just looking at what existing microcontrollers need and just adding the parts we need. 
+
+This took longer than expected because I spent time to go through a data sheet to find optimal decoupling capacitors--which I would assume someone experienced would know by heart. 
+
+**Decisions**
+- Ferrite bead for VDDA
+    - VREF to VDDA (don't have space for external ic)
+- SWD header as its smaller and more compact
+    - 2 wire connected to reset
+- Safety
+    - BOOT has a 10k gnd 
+    - Diode between CANL and CANH
+**Resources**
+This doc is my main guide:  
+https://www.st.com/resource/en/application_note/an5093-getting-started-with-stm32g4-series--hardware-development-boards-stmicroelectronics.pdf
+
+There's a lot of fluff so it's very annoying to read. 
+
+Google and reddit is always a good source. 
+
+
+
+
+Total time spent: **8 hours** 
 

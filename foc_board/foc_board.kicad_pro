@@ -615,12 +615,36 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -665,7 +689,7 @@
         "uuid": "ef7b04d1-995c-4b0f-9a31-b1724c45d8a4"
       }
     ],
-    "used_designators": "#FLG1-4,#PWR1-39,C1-14,D1,FB1,J1-3,JP1,R1-3,SW1,U1-3,Y1",
+    "used_designators": "#FLG1-6,#PWR1-39,#PWR41-47,#PWR49-73,C1-14,C22-33,D1-3,FB1,J1-3,J5-6,JP1,L1,Q1,R1-3,R5-11,SW1,U1-5,Y1",
     "variants": []
   },
   "sheets": [
@@ -680,6 +704,18 @@
     [
       "a276472e-d96b-4ec8-b118-76b48c43366f",
       "MCU"
+    ],
+    [
+      "2f39e877-048c-475c-88c2-0bb85cf0ddb7",
+      "Motor Driver"
+    ],
+    [
+      "0e4d2d62-f322-421c-a7de-6f6c345ec4f7",
+      "Encoder"
+    ],
+    [
+      "716ea15b-7cdf-4eb9-bfb3-771b486d0625",
+      "Power"
     ]
   ],
   "text_variables": {},

@@ -984,7 +984,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
+			(property "Reference" "U3"
 				(at 20.32 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -994,7 +994,7 @@
 					)
 				)
 			)
-			(property "Value" "PTCAN3413DDFR"
+			(property "Value" "TCAN3413DDFR"
 				(at 20.32 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1004,7 +1004,7 @@
 					)
 				)
 			)
-			(property "Footprint" "SOT-23-THIN-8_DDF_TEX"
+			(property "Footprint" "TCAN3413_FP:SOT-23-THIN-8_DDF_TEX"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1138,24 +1138,6 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 0 -5.08 0)
 					(length 7.62)
@@ -1257,6 +1239,26 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PTCAN3413DDFR_1_1"
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1636,145 +1638,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VBUS"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VBUS"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VBUS\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VBUS_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VBUS_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
+	)
+	(junction
+		(at 129.54 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "373c7eb3-e1b3-4832-8b34-9a3d5dc5e19f")
 	)
 	(junction
 		(at 27.94 105.41)
@@ -1819,12 +1688,6 @@
 		(uuid "9ae9d0ad-eeb2-45e2-adc0-3254e49daa19")
 	)
 	(junction
-		(at 129.54 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9e93fb81-e24d-4324-baf7-1ebaaa0ea90c")
-	)
-	(junction
 		(at 41.91 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1842,6 +1705,12 @@
 		(color 0 0 0 0)
 		(uuid "c3f4a55b-dc0c-4807-a2ab-7432f7af2cbd")
 	)
+	(junction
+		(at 144.78 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e25e2c62-bf9f-4a99-951c-aa54122b71eb")
+	)
 	(wire
 		(pts
 			(xy 144.78 105.41) (xy 144.78 102.87)
@@ -1851,16 +1720,6 @@
 			(type default)
 		)
 		(uuid "0d389168-aaac-4298-aacd-b80a568ae656")
-	)
-	(wire
-		(pts
-			(xy 139.7 50.8) (xy 129.54 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1cadb93f-71ac-432d-9451-1b67b6961db1")
 	)
 	(wire
 		(pts
@@ -2074,6 +1933,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 48.26) (xy 129.54 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f9ab128-9a92-41af-a9c3-a1649dffb9b5")
+	)
+	(wire
+		(pts
 			(xy 144.78 83.82) (xy 107.95 83.82)
 		)
 		(stroke
@@ -2184,6 +2053,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 57.15) (xy 144.78 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f80fef47-8ba9-41ba-8065-b3e86c73d892")
+	)
+	(wire
+		(pts
 			(xy 91.44 83.82) (xy 91.44 102.87)
 		)
 		(stroke
@@ -2243,85 +2122,6 @@
 			(justify right)
 		)
 		(uuid "bc4259d6-1ed8-448b-8826-a25a8a5bcd2d")
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 144.78 57.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "186bd7b1-80b0-41e3-9dd9-59d9b0dd326e")
-		(property "Reference" "#PWR014"
-			(at 148.59 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 140.97 57.1499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 144.78 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fcf8f62e-3037-41af-99fe-a4ba71f17ff7")
-		)
-		(instances
-			(project "foc_board"
-				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4/7eb098d0-6080-4306-9e8d-94537ca39047"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2645,84 +2445,6 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 129.54 50.8 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c9523a1-4629-4c48-8419-82914ca2be2f")
-		(property "Reference" "#FLG03"
-			(at 129.54 52.705 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 129.54 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 129.54 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f60d286a-6e50-49ea-9263-a28049541178")
-		)
-		(instances
-			(project "foc_board"
-				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4/7eb098d0-6080-4306-9e8d-94537ca39047"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
 		(at 25.4 105.41 0)
 		(unit 1)
 		(body_style 1)
@@ -2872,84 +2594,6 @@
 			(project "foc_board"
 				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4/7eb098d0-6080-4306-9e8d-94537ca39047"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 139.7 50.8 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "78d9a319-31c4-4e2b-a5f6-c153a0e159fc")
-		(property "Reference" "#PWR011"
-			(at 135.89 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 139.192 49.53 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 139.7 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4b6c84aa-c202-4f64-92ea-4c08aec1d047")
-		)
-		(instances
-			(project "foc_board"
-				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4/7eb098d0-6080-4306-9e8d-94537ca39047"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3633,7 +3277,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT-23-THIN-8_DDF_TEX"
+		(property "Footprint" "TCAN3413_FP:SOT-23-THIN-8_DDF_TEX"
 			(at 41.91 100.33 0)
 			(hide yes)
 			(show_name no)

@@ -26,6 +26,144 @@
 		(uuid "41b34ab4-6604-4629-9b3b-49da5a0e9e02")
 	)
 	(sheet
+		(at 142.24 105.41)
+		(size 49.53 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0e4d2d62-f322-421c-a7de-6f6c345ec4f7")
+		(property "Sheetname" "Encoder"
+			(at 142.24 104.6984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "encoder.kicad_sch"
+			(at 142.24 141.5546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "foc_board"
+				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 138.43 29.21)
+		(size 53.34 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2f39e877-048c-475c-88c2-0bb85cf0ddb7")
+		(property "Sheetname" "Motor Driver"
+			(at 138.43 28.4984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor_driver.kicad_sch"
+			(at 138.43 71.7046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "foc_board"
+				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 58.42 93.98)
+		(size 58.42 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "716ea15b-7cdf-4eb9-bfb3-771b486d0625")
+		(property "Sheetname" "Power"
+			(at 58.42 93.2684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 58.42 123.7746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "foc_board"
+				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 73.66 49.53)
 		(size 46.99 34.29)
 		(exclude_from_sim no)

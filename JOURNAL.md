@@ -122,7 +122,7 @@ Here's what my schematic looks like so far. I finished the crystals and added th
 Total time spent: **5.5 hours** 
 
 ---
-October 25, 2026 <Starting the Schematic>
+October 25, 2026 <Continuing Schematic Design>
 
 Spent time starting the schematic! Last session I spent time building the CAN and MCU schematics. 
 
@@ -130,7 +130,7 @@ This session I'll focus on adding the power + extra parts for a MCU to actually 
 
 The wiring was getting messy so I split the wiring into the CAN module and the TCAN3413DDFR
 
-Designing the schematic was mainly just looking at what existing microcontrollers need and just adding the parts we need. 
+Designing the schematic was mainly just looking at what existing microcontrollers need and just adding the parts we need. Nothing really unique or interesting happened.  
 
 This took longer than expected because I spent time to go through a data sheet to find optimal decoupling capacitors--which I would assume someone experienced would know by heart. 
 
@@ -148,7 +148,7 @@ https://www.st.com/resource/en/application_note/an5093-getting-started-with-stm3
 
 There's a lot of fluff so it's very annoying to read. 
 
-Google and reddit is always a good source. 
+Google and reddit is always helpful, though it says things that are not always accurate.
 
 
 

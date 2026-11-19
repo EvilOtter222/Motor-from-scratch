@@ -2199,6 +2199,12 @@
 		(uuid "157e5479-a916-46bf-a4b6-b8bb7e25db41")
 	)
 	(junction
+		(at 116.84 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "375bf840-b1b8-42c0-a5b8-f5a7addf5b83")
+	)
+	(junction
 		(at 116.84 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2543,7 +2549,7 @@
 		(uuid "d60f48bf-5acf-40f6-9304-a6fa70c22ff7")
 	)
 	(hierarchical_label "ADC"
-		(shape input)
+		(shape output)
 		(at 113.03 43.18 180)
 		(effects
 			(font
@@ -2587,7 +2593,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 81.28 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -2872,6 +2878,85 @@
 			(project "foc_board"
 				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4/716ea15b-7cdf-4eb9-bfb3-771b486d0625"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 116.84 26.67 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c881efa-f557-478d-8be1-9961a8e7d7ec")
+		(property "Reference" "#FLG03"
+			(at 114.935 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 113.03 26.6699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 116.84 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "920c0248-4c95-41fc-b9e8-8b8fe06b4d54")
+		)
+		(instances
+			(project "foc_board"
+				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4/716ea15b-7cdf-4eb9-bfb3-771b486d0625"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -3645,7 +3730,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 93.98 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -4517,7 +4602,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 121.92 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -4677,7 +4762,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 74.93 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -5161,7 +5246,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 39.37 31.75 0)
 			(hide yes)
 			(show_name no)

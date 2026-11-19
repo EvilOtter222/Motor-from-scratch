@@ -1664,12 +1664,6 @@
 		(uuid "6bbef068-92b4-4832-96f4-62d9a8cd19aa")
 	)
 	(junction
-		(at 25.4 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8702cc70-5b8e-4b8c-b277-83ebdb9f0f59")
-	)
-	(junction
 		(at 137.16 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2236,7 +2230,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 27.94 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2438,84 +2432,6 @@
 			(project "foc_board"
 				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4/7eb098d0-6080-4306-9e8d-94537ca39047"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 25.4 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4d59f4e9-2cc9-4e0b-a887-9738c364d453")
-		(property "Reference" "#FLG01"
-			(at 25.4 103.505 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 25.4 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 25.4 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 25.4 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "898549e3-223d-4130-9310-bc6229df0269")
-		)
-		(instances
-			(project "foc_board"
-				(path "/ef7b04d1-995c-4b0f-9a31-b1724c45d8a4/7eb098d0-6080-4306-9e8d-94537ca39047"
-					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -3463,7 +3379,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 82.55 121.92 0)
 			(hide yes)
 			(show_name no)
